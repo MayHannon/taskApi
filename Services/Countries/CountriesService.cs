@@ -93,14 +93,14 @@ namespace taskApi.Services.Countries
         public async Task<CountryResource> UpdateCountries(CountryModel UpdateedCountries, int id)
         {
 
-            var dbCountries = await _Context.Countries.AsNoTracking().FirstOrDefaultAsync(c => c.id == id);
+            var dbCountries = await _Context.Countries.Include(c => c.Flage).AsNoTracking().FirstOrDefaultAsync(c => c.id == id);
             
             if (dbCountries == null)
                 throw new Exception($"Country with id {id} does not exist");
             dbCountries = UpdateedCountries.MapModelToEntity(id);
             _Context.Update(dbCountries);
             await _Context.SaveChangesAsync();
-
+             dbCountries =await _Context.Countries.Include(c => c.Flage).FirstOrDefaultAsync(c => c.id == id);
             return dbCountries.MapEntityToResource();
         }
     }

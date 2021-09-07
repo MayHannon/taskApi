@@ -5742,11 +5742,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\taskApi\\taskApi.csproj",
+      "projectUniqueName": "C:\\Users\\user\\New folder (3)\\taskApi\\taskApi.csproj",
       "projectName": "taskApi",
-      "projectPath": "C:\\Users\\user\\taskApi\\taskApi.csproj",
+      "projectPath": "C:\\Users\\user\\New folder (3)\\taskApi\\taskApi.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\taskApi\\obj\\",
+      "outputPath": "C:\\Users\\user\\New folder (3)\\taskApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
